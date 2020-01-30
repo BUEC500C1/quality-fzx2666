@@ -2,6 +2,7 @@ import hw1
 import pytest
 
 def test_container():
-    assert hw1.intToRoman(1) == 'I'
-    assert hw1.intToRoman(100) == 'C'
-    assert hw1.intToRoman(1000) == 'M'
+    a = [1,100,1000,1500,2000,2500,3000]
+    b = ['I','C','M','MD','MM','MMD','MMM']
+    for x,y in zip(a,b):
+        assert Arab2Roman.intToRoman(x) == y
